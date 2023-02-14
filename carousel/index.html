@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Carousel Template · Bootstrap v5.3</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+
+
+
+
+
+
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(window).scroll(function () {
+      if ($(document).scrollTop() > 50) {
+        $('.navbar').addClass('hide');
+      } else {
+        $('.navbar').removeClass('hide');
+      }
+    });
+  </script>
+  <style>
+    .navbar {
+      transition: all 0.3s ease-in-out;
+    }
+
+    .hide {
+      top: -70px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Kisanology</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <main>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active"
+          style="background-image: url(https://media.npr.org/assets/img/2018/10/17/cotton31_wide-dd6c7ca447d57bf11a9c2be0ca1d069e5fe6fa66-s1400-c100.jpg); background-size: cover; background-position: center;">
+          <div class="container">
+            <div class="carousel-caption style=" background-color: rgba(255, 255, 255, 0.7);">
+
+              <h1>Cotton</h1>
+              <p>Maharashtra is the largest cotton growing State in the country.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item"
+          style="background-image: url(https://plantura.garden/uk/wp-content/uploads/sites/2/2021/10/early-soybean.jpg); background-size: cover; background-position: center;">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Soyabean</h1>
+              <p>Production of soybean in India is dominated by Maharashtra and Madhya Pradesh which contribute 89 per
+                cent of the total production.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item"
+          style="background-image: url(https://harvesttotable.com/wp-content/uploads/2009/04/Chickpea-bigstock-Fresh-Green-Chickpeas-Field-333029092-scaled-2048x1366.jpg); background-size: cover; background-position: center;">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Chickpea</h1>
+              <p>Maharashtra ranks third position in area and production of chickpea in India</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item"
+          style="background-image: url(https://gardenerspath.com/wp-content/uploads/2022/02/How-to-Grow-Pigeon-Peas-Feature.jpg); background-size: cover; background-position: center;">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Pigeon pea</h1>
+              <p>The majority of farmers in Maharashtra planted pigeon pea as intercrop mainly as risk minimization and
+                crop diversification strategy.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item"
+          style="background-image: url(https://images.news18.com/ibnlive/uploads/2022/06/moong-cultivation-16543292063x2.png); background-size: cover; background-position: center;">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Mung</h1>
+              <p>Green gram also known as moong is one of the main pulse crop of Maharashtra</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item"
+          style="background-image: url(https://cdn.britannica.com/21/136021-050-FA97E7C7/Sorghum.jpg); background-size: cover; background-position: center;">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Millet</h1>
+              <p>Maharashtra, Rajasthan, and Karnataka are the top 3 millet producing states in the country.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item"
+          style="background-image: url(https://picstatio.com/large/311206/spike-threads-green-wheat-plant.jpg); background-size: cover; background-position: center;">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Wheat</h1>
+              <p>In year 2021, over two million metric tons of wheat was produced in Maharashtra.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item"
+          style="background-image: url(http://dhcrop.bsmrau.net/wp-content/uploads/2016/06/K1600_IMG_0510.jpg); background-size: cover; background-position: center;">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Black Gram</h1>
+              <p>About 70%t of world's black gram production comes from India.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item"
+          style="background-image: url(https://cdn.dr.hauschka.com/images/system/plant_library/sesamum-indicum-l.jpg); background-size: cover; background-position: center;">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Sesame</h1>
+              <p>India is the largest producer of sesame catering to the world market.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item"
+          style="background-image: url(https://cf.ltkcdn.net/garden/images/orig/234484-1600x1040-wasps-pollinating-fennel.jpg); background-size: cover; background-position: center;">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Fennel</h1>
+              <p>India is one of the top fennel producing country in the world</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  
+
+    <!-- Marketing messaging and featurettes
+  ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+          </svg>
+          <h2 class="fw-normal">Heading</h2>
+          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first
+            column.</p>
+          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+          </svg>
+          <h2 class="fw-normal">Heading</h2>
+          <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.
+          </p>
+          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+          </svg>
+          <h2 class="fw-normal">Heading</h2>
+          <p>And lastly this, the third column of representative placeholder content.</p>
+          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+      <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
